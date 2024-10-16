@@ -1,0 +1,623 @@
+/* .rectangle {
+    display: flex;
+        width: 2101px;
+        height: 1446px;
+        position: fixed;
+        width: 1805px;
+        height: 1176px;
+        top: 0;
+        left: 0;
+      }
+    
+
+.history .span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f66801d1;
+    position: absolute;
+    height: 385px;
+    top: 0;
+    left: 982px;
+    font-family: "Montserrat-Black", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 100.1px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 100.1px;
+}
+
+ */
+
+
+
+
+
+ @import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+
+/* Custom CSS for diagonal cut */
+.diagonal-cut, .section-content {
+  
+  background-color: #facc15; /* Tailwind's yellow-400 */
+  clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 80%);
+}
+
+/* Active button */
+.active {
+  color: #facc15; /* Yellow active color */
+}
+
+.filter-btn:hover {
+  color: #facc15; /* Yellow hover */
+}
+
+/* Tailwind overrides for container */
+.container {
+  max-width: 1200px;
+}
+
+/* Media item styling */
+.media-item {
+  transition: transform 0.2s ease;
+}
+
+.media-item:hover {
+  transform: scale(1.05);
+}
+
+.dog-image {
+  height: 450px;
+}
+
+.history-of {
+  color: #F76902;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.history-of-alabay {
+  font-family: sans-serif;
+}
+
+.history-content {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-content {
+  width: 100%;
+  height: 100%;
+}
+
+.section-shape {
+  clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 100%);
+}
+
+.media-item {
+  height: 150px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 0 10px;
+  flex-shrink: 0;
+  align-content: center;
+}
+
+/* Add styles for navigation arrows */
+.arrow-btn {
+  color: #333; 
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  color: #facc15; /* Yellow hover */
+}
+
+/* Add styles for media items */
+#media-items {
+  display: inline-flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #facc15 #fff; /* Yellow scrollbar */
+}
+
+#media-items::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+#media-items::-webkit-scrollbar-thumb {
+  background-color: #facc15; /* Yellow scrollbar thumb */
+  border-radius: 10px;
+}
+
+#media-items::-webkit-scrollbar-track {
+  background-color: #fff; /* White scrollbar track */
+}
+
+/* Add styles for media grid */
+#media-grid {
+  align-items: center;
+}
+
+.media-item {
+  margin: 0 10px;
+}
+
+.project-vision {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.project-vision-content {
+  color: black;
+  background-color: #facc15;
+  padding: 40px;
+  margin-top: -0.5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.trapezoid {
+  clip-path: polygon(0 70%, 100% 10%, 100% 100%, 0 100%);
+  background-color: #facc15; /* yellow-400 */
+  padding: 50px; /* increased padding to make the trapezoid larger */
+  position: relative;
+  height: 400px; /* set a fixed height to make the trapezoid larger */
+}
+
+.group-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-vision {
+  color: #F76902;
+  padding: 20px 0;
+}
+
+.roadmap {
+  background-color: #facc15; /* Tailwind's yellow-400 */
+  clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 80%);
+  width: 100%;
+  height: 100%;
+}
+
+.road-map{
+  color: #fff;
+  background-color: #facc15; /* Tailwind's yellow-400 */
+  clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 50%);
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  margin-top: -9%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.road-map-image {
+  margin-top: -50px;
+  height: 80%;
+}
+
+.road-map-content {
+  display: grid;
+  grid-template-columns: 0.7fr 0.7fr;
+}
+
+.road-map-content-left {
+  margin-left: 15%;
+}
+
+.outer-merchandise {
+  margin-top: -10%;
+  display: grid;
+  grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.merch-img1 {
+  background-color: #E8D740;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main1 {
+  margin-left: 5%;
+}
+
+.small1 {
+  margin-left: 15%;
+}
+
+
+.merch-img2 {
+  background-color: #19DDD5;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.main2 {
+  margin-left: 20%;
+}
+
+.small2 {
+  margin-left: 25%;
+}
+
+.merch-img3 {
+  background-color: #CC2EFD;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.main3 {
+  margin-left: 8%;
+}
+
+.small3 {
+  margin-left: 25%;
+}
+
+
+.merch-img4 {
+  background-color: #913A42;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.main4 {
+  margin-left: 6%;
+}
+
+.small4 {
+  margin-left: 35%;
+}
+
+.new-trapezoid {
+  clip-path: polygon(0 90%, 100% 10%, 100% 100%, 0 100%);
+  background-color: #facc15; /* yellow-400 */
+  padding: 80px;
+}
+
+.new-trapezoid p{
+  margin-top: 35%;
+  color: #fff;
+}
+/* clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 50%); */
+
+.tokenomics-list-items {
+  height: 100px;
+  width: 400px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  background-color: #353535;
+  align-content: center;
+  border-radius: 12px;
+  box-shadow: 12px 10px 12px rgba(0,0,0,0.5);
+  /* text-align: center; */
+}
+
+.tokenomics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 60%);
+}
+
+.tokenomics-image {
+  margin-top: 5%;
+  height: 80%;
+}
+
+.tokenomics-text {
+  margin-top: -20%;
+}
+
+.tokenomics-new-trapezoid {
+  padding: 2px;
+  margin-top: 20%;
+  color: #fff;
+}
+
+.tokenomics-text {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tokenomics-list-items p {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 8%;
+}
+
+.tokenomics-list-items span {
+  color: #FFF280;
+  margin-left: 8%;
+}
+
+/* clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 50%); */
+
+/* .merchandise{
+  color: #fff;
+  background-color: #facc15; /* Tailwind's yellow-400
+  clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 50%);
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+.merch-text {
+  color: #FFA800;
+  margin-left: 26.5%;
+  padding-bottom: 40px;
+}
+
+.pink-tshirt {
+  background: url(./images/pink\ tee\ bck.png);
+}
+
+.merchandise-actual {
+  text-align: center;
+}
+
+.merch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.arrow-container {
+  background-color: #ccc; /* Light grey color for circle */
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute; /* Position arrows inside merch-item */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4; /* Make sure arrows appear on top */
+}
+
+.left-arrow-container {
+  left: 300px; /* Adjust position inside merch-item */
+}
+
+.right-arrow-container {
+  right: 300px; /* Adjust position inside merch-item */
+}
+
+/* Left and right arrows */
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.merch-item {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: #f9d6f7;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures the arrows stay inside the pink box */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+/* T-shirt image */
+.tshirt {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.overlay-text {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+.overlay-text h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+  text-align: end;
+  padding-left: 380px;
+  padding-top: 60px;
+}
+
+
+.games-text {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -20%;
+  margin-left: 75%;
+  padding-bottom: 20%;
+}
+
+
+.games-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: -10%;
+  background-color: #facc15;
+}
+
+.arrow-container {
+  background-color: #ccc; /* Light grey color for circle */
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute; /* Position arrows inside merch-item */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4; /* Make sure arrows appear on top */
+}
+
+/* .left-arrow-container {
+  left: 300px; /* Adjust position inside merch-item 
+} */
+
+.right-arrow-container-games {
+  right: 250px; /* Adjust position inside merch-item */
+}
+
+/* Left and right arrows */
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.games-item {
+  position: relative;
+  width: 70%;
+  height: 400px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures the arrows stay inside the pink box */
+  border: 2px solid black;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+/* T-shirt image */
+
+.overlay-text {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+.overlay-text h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+  text-align: end;
+  padding-left: 380px;
+  padding-top: 60px;
+}
+
+.discover-btn {
+  position:absolute;
+  bottom: 20px;
+  left: 50%; 
+  transform: translateX(-50%);
+  background-color: #843AFC;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 4;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.discover-btn:hover {
+  background-color: #866ab1;
+}
+
+.stay-tuned {
+  margin-left: 60%;
+  padding-bottom: 20%;
+}
+
+.game-previews {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-prev-img {
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.game-prev-title {
+  margin-left: 20px;
+  color: #FFA800;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.title-prev {
+  color: #353535;
+}
+
+.social-media p{
+  color: #FFA800;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+.social-media-imgs {
+  display: grid;
+  grid-template-columns: 0.3fr 0.9fr;
+}
+
+.phone {
+  height: 500px;
+  margin-left: 40%;
+}
+
+.links-img {
+  margin-top: 50%;
+  margin-left: 90%;
+}
